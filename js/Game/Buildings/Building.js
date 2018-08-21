@@ -1,9 +1,9 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Building = /** @class */ (function () {
-    function Building(game) {
+class Building {
+    constructor(game)
+    {
         this.game = game;
+        this.cost = new Resources();
+        this.button = null;
+        this.owned = 0;
     }
-    return Building;
-}());
-exports.Building = Building;
+}
